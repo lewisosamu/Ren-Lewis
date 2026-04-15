@@ -58,13 +58,13 @@ body {
 }
 
 .grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: stretch;
   width: calc(100% - 300px);
   margin: 100px 150px 50px 150px;
 }
 .left {
-  width: 50%;
   min-width: 0;
   padding: 50px;
   background-color: rgb(13, 20, 23);
@@ -72,18 +72,19 @@ body {
   border-radius: 20px;
 }
 .right {
-  width: 50%;
   min-width: 0;
   display: flex;
   flex-direction: column;
 }
 .box {
+  flex: 1;
   padding: 50px;
   border: solid 2px rgb(0, 0, 0);
   background-color: rgb(13, 20, 23);
   border-radius: 20px;
 }
 .box2 {
+  flex: 1;
   border: solid 2px rgb(0, 0, 0);
   background-color: rgb(13, 20, 23);
   border-radius: 20px;
@@ -91,6 +92,7 @@ body {
   grid-template-columns: 3fr 1fr;
 }
 .box3{
+  flex: 1;
   padding: 50px;
   overflow: hidden;
   white-space: nowrap;
