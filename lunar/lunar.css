@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(42, 42, 42);
   overscroll-behavior: none;
 }
 
@@ -14,8 +14,8 @@ body {
   display: flex;
   position:fixed;
   background: linear-gradient(to bottom,
-    rgba(0, 0, 0) 10%,
-    rgba(0, 0, 0, 0.75) 95%,
+    rgba(42, 42, 42) 10%,
+    rgba(42, 42, 42, 0.75) 95%,
     transparent);
   width: calc(100% - 100px);
   height: 65px;
@@ -112,24 +112,39 @@ body {
   text-overflow: ellipsis;
 }
 
-.image {
-  width: calc(100% - 300px);
+.image0 {
+  width: calc(100% - 500px);
   object-fit: cover;
-  margin: 0 0 50px 150px;
+  margin: 100px 0 25px 250px;
+  border-radius: 20px;
+}
+.image {
+  width: calc(100% - 500px);
+  object-fit: cover;
+  margin: 0 0 25px 250px;
   border-radius: 20px;
 }
 .image2 {
-  width: calc(100% - 300px);
+  width: calc(100% - 500px);
   object-fit: cover;
-  margin: 100px 0 50px 150px;
+  margin: 0 0 50px 250px;
   border-radius: 20px;
+  opacity: 25%;
+  transition: 1s;
+}
+.image2:hover {
+  width: calc(100% - 500px);
+  object-fit: cover;
+  margin: 0 0 50px 250px;
+  border-radius: 20px;
+  opacity: 100%;
 }
 
 .footer {
   height: 50px;
   margin: 0px 50px 0px 50px;
   padding-top: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(42, 42, 42);
   z-index: 3;
   position: relative;
   display: flex;
